@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Form</title>
+</head>
+<body>
+    <h2>Comprehensive Student Information Form</h2>
+    <label for="name"><b>Name:</b></label>
+    <input type="text" maxlength="100" minlength="3" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed"  placeholder="Full Name (e.g., John Doe)" required>   <small>(Required, only letters and spaces allowed)</small>
+<br><br>
+    <label for="class"><b>Class:</b></label> 
+    <select name="class" id="class" required>
+        <option value="Select class">Select our class</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        
+    </select> <small>(Required, dropdown menu)</small>
+<br><br>
+    <label for="section"><b>Section:</b></label>
+    <input type="text" name="section" id="section" placeholder="Enter section (A, B, etc.)" required> <small>(Required, choose or type a valid section)</small>
+    <br><br>
+    <label for="year"><b>Year:</b></label>
+    <input type="number" name="year" id="year" max="4" min="1" required> <small>(Required, between 1 and 4)</small>
+    <br><br>
+    <label for="branch"><b>Branch:</b></label>
+    <select name="branch" id="branch" multiple size="4" required> 
+        <option value="cse">Computer Science</option>
+        <option value="ee">Electronic</option>
+        <option value="me">Mechanical</option>
+        <option value="ce">Civil</option> 
+    </select>
+    <small>(Required, select at least one branch)</small>
+    <br><br>
+    <label for="university"><b>University:</b></label>
+    <input type="text" name="university" id="university" required placeholder="Enter your university name">
+    <small>(Required, text input with spellcheck)</small>
+    <br><br>
+    <label for="college"><b>College:</b></label>
+    <input type="text" value="SR Group of Institution" readonly>
+    <small>(Pre-filled, readonly field)</small>
+    <br><br>
+    <label for="passout"><b>Passing Out Year:</b></label>
+    <input type="month" name="passout" id="passout" required>
+    <small>(Required, select a month and year)</small>
+    <br><br>
+    <label for="resume"><b>Upload Resume (optional):</b></label>
+    <input type="file" name="resume" id="resume">
+    <small>(PDF or DOC format only)</small>
+    <br><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    
+</body>
+</html>
