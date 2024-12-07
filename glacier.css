@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    background-image: url(./istockphoto-486433496-612x612.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  
